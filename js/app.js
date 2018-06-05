@@ -69,13 +69,13 @@ Player.prototype.handleInput = function(direction){
         this.x -= 100;
     }
     if(direction === 'up' && this.y >=30){
-        this.y -= 82.5
+        this.y -= 83;
     }
     if(direction === 'right' && this.x <= 305){
         this.x += 100;
     }
     if(direction === 'down' && this.y <=350){
-        this.y += 82.5;
+        this.y += 83;
     }
 };
 
