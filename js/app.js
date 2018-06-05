@@ -54,6 +54,10 @@ let player = new Player (200, 400);
 let enemyLocations = [50, 130, 220]; 
 let enemy;
 
+enemyLocations.forEach(function(loc){
+    enemy = new Enemy(0,loc, 200 + Math.floor(Math.random() *499));
+    allEnemies.push(enemy);
+});
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
