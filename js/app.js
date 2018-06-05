@@ -18,6 +18,11 @@ Enemy.prototype.update = function(dt) {
     // You should multiply any movement by the dt parameter
     // which will ensure the game runs at the same speed for
     // all computers.
+
+    // running loop for the enemies 
+    if (this.x > 500) {
+        this.x = -150;
+    }
 };
 
 // Draw the enemy on the screen, required method for game
@@ -55,7 +60,7 @@ let enemyLocations = [50, 130, 220];
 let enemy;
 
 enemyLocations.forEach(function(loc){
-    enemy = new Enemy(0,loc, 200 + Math.floor(Math.random() *499));
+    enemy = new Enemy(0,loc, 200 + Math.floor(Math.random() *500));
     allEnemies.push(enemy);
 });
 
