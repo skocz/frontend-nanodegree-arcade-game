@@ -1,3 +1,5 @@
+let = score = 0; //score defines the Level of the achivement
+
 // Enemies our player must avoid
 var Enemy = function(x,y,speed) {
     // Variables applied to each of our instances go here,
@@ -29,6 +31,8 @@ Enemy.prototype.update = function(dt) {
         player.y < this.y + 25 && 30 + player.y > this.y) {
             player.x = 200; // x, y get back to initial position 
             player.y = 400; // 
+            score = 0;
+            document.getElementById('score').innerHTML = score;
     }
 };
 
@@ -50,6 +54,8 @@ Player.prototype.update = function (){
     if (this.y < 0) {
         this.x = 200;
         this.y = 400;
+        score++;
+        document.getElementById('score').innerHTML = score;
     }
 };
 
