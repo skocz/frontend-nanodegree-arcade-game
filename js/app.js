@@ -24,8 +24,12 @@ Enemy.prototype.update = function(dt) {
         this.x = -150;
     }
 
-    //Collision with player
-
+    //Collision with the player
+    if (player.x < this.x + 60 && player.x + 37 > this.x && 
+        player.y < this.y + 25 && 30 + player.y > this.y) {
+            player.x = 200; // x, y get back to initial position 
+            player.y = 400; // 
+    }
 };
 
 // Draw the enemy on the screen, required method for game
