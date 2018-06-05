@@ -85,7 +85,7 @@ Player.prototype.handleInput = function(direction){
 let allEnemies =[];
 // Place the player object in a variable called player
 let player = new Player (200, 400);
-let enemyLocations = [50, 130, 220]; 
+let enemyLocations = [60, 140, 220]; 
 let enemy;
 
 enemyLocations.forEach(function(loc){
