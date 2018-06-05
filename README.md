@@ -21,6 +21,6 @@ Level: increases each time the player reaches the water, it resets to 0 when col
 
 
 ## Reflections: 
--JavaScript enables the development of complex applications on the web.
--JavaScript runs on normal web browsers, which makes it one of the most accessible and flexible programming languages.
--Complex applications that must be “broken down” into simpler entities that manage their own properties and functionality.
+- JavaScript enables the development of complex applications on the web.
+- JavaScript runs on normal web browsers, which makes it one of the most accessible and flexible programming languages.
+- Complex applications that must be “broken down” into simpler entities that manage their own properties and functionality.
