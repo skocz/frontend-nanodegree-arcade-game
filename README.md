@@ -3,6 +3,7 @@
 
 ## Table of Contents
 * [Project Intro](#project-intro)
+* [Instruction](#instraction)
 * [Frogger Game Description](#frogger-game-description)
 * [Reflections](#reflections)
 
@@ -12,6 +13,13 @@
 
 I was provided with the visual assets and in-game loop engine. 
 I've created interactive objcts in the game: player and enemy instances. 
+
+## Instruction
+
+At the moment you can only play the game on the computer with the access to the keyboard: 
+
+Left key should move the player to the left, right key to the right, up should move the player up and down should move the player down.
+
 
 ## Frogger Game Description
 
