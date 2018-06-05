@@ -23,6 +23,9 @@ Enemy.prototype.update = function(dt) {
     if (this.x > 500) {
         this.x = -150;
     }
+
+    //Collision with player
+
 };
 
 // Draw the enemy on the screen, required method for game
@@ -46,9 +49,21 @@ Player.prototype.render = function(){
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
 
-Player.prototype.handleInput = function(){
+Player.prototype.handleInput = function(direction){
 
-}
+    if(direction === 'left' && this.x >= 100){
+        this.x -= 100;
+    }
+    if(direction === 'up' && this.y >=30){
+        this.y -= 82.5
+    }
+    if(direction === 'right' && this.x <= 305){
+        this.x += 100;
+    }
+    if(direction === 'down' && this.y <=350){
+        this.y += 82.5;
+    }
+};
 
 
 // Now instantiate your objects.
