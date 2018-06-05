@@ -1,7 +1,7 @@
 let = score = 0; //score defines the Level of the achivement
 
 // Enemies our player must avoid
-var Enemy = function(x,y,speed) {
+const Enemy = function(x,y,speed) {
     // Variables applied to each of our instances go here,
     // we've provided one for you to get started
     this.x = x;
@@ -44,11 +44,11 @@ Enemy.prototype.render = function() {
 // Now write your own player class
 // This class requires an update(), render() and
 // a handleInput() method.
-let Player = function (x,y){
+const Player = function (x,y){
     this.x = x;
     this.y = y;
     this.sprite = 'images/char-boy.png';
-}
+};
 
 Player.prototype.update = function (){ 
     if (this.y < 0) {
