@@ -47,7 +47,11 @@ let Player = function (x,y){
 }
 
 Player.prototype.update = function (){ 
-}
+    if (this.y < 0) {
+        this.x = 200;
+        this.y = 400;
+    }
+};
 
 Player.prototype.render = function(){
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
