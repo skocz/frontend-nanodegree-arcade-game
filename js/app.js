@@ -1,4 +1,4 @@
-let = score = 0; //score defines the Level of the achivement
+let score = 0; //score defines the Level of the achivement
 
 // Enemies our player must avoid
 const Enemy = function(x,y,speed) {
@@ -16,7 +16,7 @@ const Enemy = function(x,y,speed) {
 // Parameter: dt, a time delta between ticks
 Enemy.prototype.update = function(dt) {
 
-    this.x += this.speed * dt 
+    this.x += this.speed * dt;
     // You should multiply any movement by the dt parameter
     // which will ensure the game runs at the same speed for
     // all computers.
